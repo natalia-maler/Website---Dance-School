@@ -1,0 +1,73 @@
+body
+{
+	background-color: white;
+	color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+	text-align:justify;
+}
+
+h1
+{
+	font-size: 36px;
+	font-weight: 400;
+	color: black;
+	margin: 20px;
+}
+
+
+.naglowek{ font-size: 20px;font-weight:bold;}
+.cena{font-size: 30px;color:red;}
+footer{background-color: #F26B8A; text-align: center;
+		 padding: 3px;
+		
+		}
+.container{background-color:#FEFAF1;
+
+}
+
+
+
+
+
+.srodek{display: inline-block; align-items: center; width:130px; border: 1px solid grey;}
+
+
+.row div  { background-color:#FEFAF1;text-align:center;width:200px; height:220px; bottom:10px;} 
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.strona
+{
+	text-align: center;
+}
+
+.strona img
+{
+	width: 100%;
+	height: auto;
+}
+
+.strona p
+{
+	margin-bottom: 30px;
+}
+
+
+
+nav{ text-align:center;}
+.navbar
+{
+	min-height: 57px;
+	color:white;
+
+}
+
+.bg-strona
+{
+	background-color: #F26B8A !important;
+}
+

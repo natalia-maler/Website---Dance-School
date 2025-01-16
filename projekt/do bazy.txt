@@ -1,0 +1,76 @@
+create table visitors (
+id int auto_increment primary key,
+count int default 0);
+
+
+
+
+create table contacts1 (
+id int auto_increment primary key,
+name varchar(50),
+email varchar(50),
+subject varchar(50),
+message varchar(200));
+
+
+
+
+insert into instruktorzy(imie_nazwisko,opis,zdjecie_sciezka)
+values('Krzysztof Nowak', 'Urodzony tańcerz. Swoją przygodę zaczął w wieku 8 lat. Jest doświadczonym instruktorem i choreografem tańca latyno-amerykańskiego. Wielokrotnie brał udział w turniejach tańca towarzyskiego o randze krajowej i międzynarodowej, zdobywając liczne osiągnięcia. Obecnie trenuje pary turniejowe młodzieży i dorosłych, które z powodzeniem odnoszą wiele sukcesów na turniejach i pokazach. Z pewnością nauczy Cię jak poruszać ciało, aby się dobrze prezentować na scenie.', 'img/kn.png');
+
+insert into instruktorzy(imie_nazwisko,opis,zdjecie_sciezka)
+values('Marcin Mucha', 'Pierwsze kroki taneczne stawiał w wieku 8 lat.  Na swoim koncie ma wiele sukcesów i nagród zdobytych na ogólnopolskich turniejach tańca. Specjalizuje się w klasycznych tańcach między innymi walc angielski, walc wiedeński oraz tango.  Na swoich zajęciach pokazuje kursantom, że taniec to przede wszystkim świetna zabawa.', 'img/mm.jpg');
+
+insert into instruktorzy(imie_nazwisko,opis,zdjecie_sciezka)
+values('Julia Kociołek', 'Tancerka z wieloletnim doświadczeniem. Występuje na turniejach w Polsce, jak i zagranicą. Nie boi się wyzwań i dobrze wykonuje spontaniczne ruchy. Świetnie nauczy Cię kroków do tańca towarzyskiego. Prowadzi też zajęcia dla pary młodej. ', 'img/jk.jpg');
+
+
+insert into instruktorzy(imie_nazwisko,opis,zdjecie_sciezka)
+values('Magdalena Wiśniewska', 'Tańczy od 7 roku życia. Trenując od najmłodszych lat wykształciła w sobie wytrwałość i ducha walki, co pomogło jej zdobyć liczne tytuły na arenie międzynarodowej. Na zajęciach duży nacisk kładzie na poprawność techniczną tańca.
+Magdalena czerpie inspiracje z rożnych styli, jednak najbliżej jej do jazzu i dancehall.', 'img/mw.jpg');
+
+
+insert into instruktorzy(imie_nazwisko,opis,zdjecie_sciezka)
+values('Jakub Mularczyk', 'Tańczyć zaczynał w wieku 10 lat. Zdobył wiele osiągnieć w brekadance i dancehall. Występował w różnych programach telewizyjnych i w teledyskach. W tańcu bardzo ceni indywidualizm i możliwość wyrażania siebie. Potrafi kursantów wyciągać ich ze strefy komfortu i pokazywać różne ścieżki rozwoju i treningu.', 'img/jm.jpg');
+
+
+
+create table cennik_grupowe (
+id int auto_increment primary key,
+nazwa varchar(50),
+cena varchar(50));
+
+insert into cennik_grupowe(nazwa,cena)
+values('POJEDYNCZE WEJŚCIE:', '40 zł');
+
+insert into cennik_grupowe(nazwa,cena)
+values('KARNET MIESIĘCZNY -  TAŃCE LATYNO-AMERYKAŃSKIE:', '370 zł');
+
+insert into cennik_grupowe(nazwa,cena)
+values('KARNET MIESIĘCZNY - NA WSZYSTKIE TAŃCE KLASYCZNE:', '400 zł');
+
+insert into cennik_grupowe(nazwa,cena)
+values('KARNET MIESIĘCZNY - NA WSZYSTKIE TAŃCE NOWOCZESNE:', '420 zł');
+
+insert into cennik_grupowe(nazwa,cena)
+values('KARNET DZIECIĘCY(TYLKO BREAKDANCE):', '100 zł');
+
+insert into cennik_grupowe(nazwa,cena)
+values('POJEDYNCZY MIESIĘCZNY KARNET:', '120 zł');
+
+create table cennik_indywidualne (
+id int auto_increment primary key,
+nazwa varchar(50),
+cena varchar(50));
+
+insert into cennik_indywidualne(nazwa,cena)
+values('POJEDYNCZE WEJŚCIE:', '80 zł');
+
+insert into cennik_indywidualne(nazwa,cena)
+values('POJEDYNCZY MIESIĘCZNY KARNET', '200 zł');
+
+insert into cennik_indywidualne(nazwa,cena)
+values('POJEDYNCZE WEJŚCIE DLA PARY:', '120 zł');
+
+insert into cennik_indywidualne(nazwa,cena)
+values('POJEDYNCZY MIESIĘCZNY KARNET DLA PARY:', '300 zł');

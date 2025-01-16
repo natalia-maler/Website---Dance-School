@@ -1,0 +1,106 @@
+body
+{
+	background-color: white;
+	color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+	text-align:justify;
+}
+
+h1
+{
+	font-size: 36px;
+	font-weight: 400;
+	color: black;
+	margin: 20px;
+}
+
+
+footer{background-color: #F26B8A; text-align: center;
+		 padding: 3px;
+		
+		}
+.container{background-color:#FEFAF1;
+
+}
+
+a:hover {
+   text-decoration: none; ;
+}
+a{color:inherit;}
+
+<!-- dla kontakt -->
+.formm{ border: 1px solid black; background-color:white;}
+input:hover[type="submit"] 
+		{
+			background: grey;
+			
+		}
+
+.row div img { width:250px; height:250px; border-radius: 100%;} 
+
+.srodkowanie{ display: flex;
+  justify-content: center; 
+  align-items: center;}
+
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+<!-- dla instruktorzy -->
+.row1 
+{display: flex;
+    align-items: center;
+    justify-content: center;
+	}
+
+
+
+@media (max-width: 575px)
+{
+	.taniec
+	{
+		margin: 40px 20px;
+		text-align:left;
+	    font-size: 15px;
+	
+		
+	}
+}
+
+
+
+.strona
+{
+	text-align: center;
+}
+
+.strona img
+{
+	width: 100%;
+	height: auto;
+}
+
+.strona p
+{
+	margin-bottom: 30px;
+}
+
+
+
+
+nav{ text-align:center;}
+.navbar
+{
+	min-height: 57px;
+	color:white;
+
+}
+
+.bg-strona
+{
+	background-color: #F26B8B !important;
+}
+
